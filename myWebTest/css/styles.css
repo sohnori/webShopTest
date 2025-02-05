@@ -1,0 +1,153 @@
+/* 기본 반응형 스타일 */
+/* 기본 스타일 */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f8f8;
+}
+
+/* 헤더 스타일 */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #ffecb3;
+  padding: 15px 20px;
+}
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+nav ul li {
+  margin: 0 15px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+/* 배너 스타일 */
+.banner {
+  text-align: center;
+  padding: 50px;
+  background: #fff3cd;
+}
+.banner h1 {
+  font-size: 36px;
+  color: #444;
+}
+.banner p {
+  font-size: 18px;
+  color: #666;
+}
+
+/* 제품 리스트 스타일 */
+.product-list {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 30px;
+}
+.product {
+  background: white;
+  padding: 15px;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+.product img {
+  width: 150px;
+  border-radius: 8px;
+}
+.product h2 {
+  font-size: 18px;
+  color: #333;
+}
+.product p {
+  font-size: 16px;
+  color: #777;
+  font-weight: bold;
+}
+
+/* 푸터 스타일 */
+footer {
+  text-align: center;
+  padding: 15px;
+  background: #ffecb3;
+  color: #333;
+}
+.social-links a {
+  text-decoration: none;
+  color: #333;
+  margin: 0 10px;
+  font-weight: bold;
+}
+/* 기본 반응형 스타일 */
+/* 기본적으로 햄버거 메뉴 숨김 */
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1024px) {
+  /* 태블릿용 스타일 */
+  .menu-toggle {
+    display: block;
+  }
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    text-align: center;
+    background: #ffecb3;
+    position: absolute;
+    width: 100%;
+    top: 60px;
+    left: 0;
+  }
+  .nav-links.active {
+    display: flex;
+  }
+  .menu-toggle {
+    display: block;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+  }
+
+  .product-list {
+    grid-template-columns: repeat(2, 1fr); /* 태블릿에서는 2열 */
+  }
+}
+
+/* 모바일용 스타일 */
+@media screen and (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+  .banner h1 {
+    font-size: 28px;
+  }
+  .banner p {
+    font-size: 16px;
+  }
+  .product-list {
+    grid-template-columns: 1fr; /* 모바일에서는 1열 */
+  }
+  .social-links {
+    flex-direction: column;
+    text-align: center;
+  }
+}
