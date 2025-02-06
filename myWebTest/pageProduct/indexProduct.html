@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>제품 페이지</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <!-- 헤더 영역 확보 -->
+    </header>
+
+    <main>
+      <nav class="product-filter">
+        <button class="filter-btn" data-category="all">전체</button>
+        <button class="filter-btn" data-category="apparel">의류</button>
+        <button class="filter-btn" data-category="kitchenware">주방용품</button>
+        <button class="filter-btn" data-category="lemons">레몬 상품</button>
+        <button class="filter-btn" data-category="stationary">문구류</button>
+      </nav>
+
+      <section class="product-list">
+        <div class="products-container">
+          <div class="product" data-category="apparel">
+            <img src="product1.jpg" alt="My Best Friend is ME sweatshirt" />
+            <p class="name">My Best Friend is ME_sweatshirt</p>
+            <p class="price">₩62,000</p>
+          </div>
+          <div class="product" data-category="apparel">
+            <img src="product2.jpg" alt="SIMPLE PERSON sweatshirt" />
+            <p class="name">SIMPLE PERSON_sweatshirt</p>
+            <p class="price">₩62,000</p>
+          </div>
+          <div class="product" data-category="apparel">
+            <img src="product3.jpg" alt="DOLPHIN SUMMER sweatshirt" />
+            <p class="name">DOLPHIN SUMMER_sweatshirt</p>
+            <p class="price">₩76,000</p>
+          </div>
+          <div class="product" data-category="kitchenware">
+            <img src="product4.jpg" alt="2025 서울 그릇 20cm" />
+            <p class="name">2025 서울 그릇 20cm</p>
+            <p class="price">₩38,000</p>
+          </div>
+
+          <div class="product" data-category="kitchenware">
+            <img src="product5.jpg" alt="you will do GREAT plate" />
+            <p class="name">you will do GREAT plate</p>
+            <p class="price">₩36,000</p>
+          </div>
+          <div class="product" data-category="kitchenware">
+            <img src="product6.jpg" alt="lemon big cup" />
+            <p class="name">lemon big cup</p>
+            <p class="price">₩28,000</p>
+          </div>
+          <div class="product" data-category="lemons">
+            <img src="product7.jpg" alt="lemon jug L" />
+            <p class="name">lemon jug L</p>
+            <p class="price">₩98,000</p>
+          </div>
+          <div class="product" data-category="lemons">
+            <img src="product8.jpg" alt="fruit jug L" />
+            <p class="name">fruit jug L</p>
+            <p class="price">₩98,000</p>
+          </div>
+        </div>
+
+        <div class="hidden-products">
+          <div class="product" data-category="stationary">
+            <img src="product9.jpg" alt="노트 A" />
+            <p class="name">노트 A</p>
+            <p class="price">₩12,000</p>
+          </div>
+          <div class="product" data-category="stationary">
+            <img src="product10.jpg" alt="노트 B" />
+            <p class="name">노트 B</p>
+            <p class="price">₩15,000</p>
+          </div>
+          <div class="product" data-category="stationary">
+            <img src="product11.jpg" alt="펜 세트" />
+            <p class="name">펜 세트</p>
+            <p class="price">₩8,000</p>
+          </div>
+          <div class="product" data-category="stationary">
+            <img src="product12.jpg" alt="스티커 세트" />
+            <p class="name">스티커 세트</p>
+            <p class="price">₩6,000</p>
+          </div>
+        </div>
+
+        <div class="more-button">
+          <button id="show-more">More</button>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <!-- 푸터 영역 확보 -->
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
