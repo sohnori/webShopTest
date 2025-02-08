@@ -1,0 +1,43 @@
+/* 메인 섹션 스타일 */
+.main-content {
+  position: relative;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.main-image {
+  max-width: 80%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* 애니메이션 캐릭터 스타일 */
+.animation-character {
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  width: 80px; /* 이미지 크기에 맞게 조정 */
+  height: 80px;
+  background-image: url("assets\241223_정상상태.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  transform: translateX(-50%);
+  animation: bounceCharacter 5s ease-in-out infinite;
+}
+
+@keyframes bounceCharacter {
+  0%,
+  100% {
+    transform: translateX(-50%) translateY(0);
+  }
+  25% {
+    transform: translateX(-100px) translateY(-50px);
+  }
+  50% {
+    transform: translateX(-50%) translateY(0);
+  }
+  75% {
+    transform: translateX(100px) translateY(-50px);
+  }
+}
