@@ -1,0 +1,70 @@
+/* 푸터 스타일 */
+.footer-container {
+  background: #ffffff;
+  color: #333;
+  padding: 30px 20px;
+  text-align: center;
+  border-top: 3px solid #333;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.business-info,
+.policy-links,
+.social-links {
+  flex: 1;
+  min-width: 250px;
+  margin: 10px;
+}
+
+.footer-container h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.policy-links a,
+.social-links a {
+  color: #333;
+  text-decoration: none;
+  display: block;
+  margin: 5px 0;
+}
+
+.policy-links a:hover,
+.social-links a:hover {
+  text-decoration: underline;
+}
+
+/* 팝업 스타일 */
+.popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  color: black;
+  padding: 20px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  z-index: 1000;
+}
+
+.popup-content {
+  position: relative;
+  max-width: 500px;
+}
+
+.close-popup {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 20px;
+  cursor: pointer;
+}

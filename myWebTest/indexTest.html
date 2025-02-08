@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FondWell Home</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Poppins", sans-serif;
+        background: #ffffff;
+        color: #333;
+        overflow-x: hidden; /* 모바일 메뉴가 열릴 때 가리지 않도록 설정 */
+      }
+      /* 메인 섹션 스타일 */
+      .main-content {
+        position: relative;
+        text-align: center;
+        padding: 50px 20px;
+      }
+
+      .main-image {
+        max-width: 80%;
+        height: auto;
+        border-radius: 10px;
+      }
+
+      /* 애니메이션 캐릭터 스타일 */
+      .animation-character {
+        position: absolute;
+        bottom: 50px;
+        left: 50%;
+        width: 80px; /* 이미지 크기에 맞게 조정 */
+        height: 80px;
+        background-image: url("assets\241223_정상상태.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        transform: translateX(-50%);
+        animation: bounceCharacter 5s ease-in-out infinite;
+      }
+
+      @keyframes bounceCharacter {
+        0%,
+        100% {
+          transform: translateX(-50%) translateY(0);
+        }
+        25% {
+          transform: translateX(-100px) translateY(-50px);
+        }
+        50% {
+          transform: translateX(-50%) translateY(0);
+        }
+        75% {
+          transform: translateX(100px) translateY(-50px);
+        }
+      }
+    </style>
+    <link rel="stylesheet" href="./fragmentHeader/fragmentHeader.css" />
+    <!-- 헤더 스타일 추가 -->
+    <script src="./fragmentHeader/fragmentHeader.js" defer></script>
+    <!-- 햄버거 메뉴 JS -->
+    <script src="scripts.js" defer></script>
+    <!-- 패치하는 JavaScript 파일 -->
+  </head>
+  <body>
+    <header id="header-container"></header>
+    <!-- 헤더를 삽입할 요소 -->
+    <!-- 메인 섹션 -->
+    <main>
+      <section class="main-content">
+        <img
+          src="assets\20230415_103946.jpg"
+          alt="메인 이미지"
+          class="main-image"
+        />
+        <div class="animation-character"></div>
+      </section>
+    </main>
+    <footer></footer>
+  </body>
+</html>
