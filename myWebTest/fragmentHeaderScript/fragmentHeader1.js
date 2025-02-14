@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
       // 2. 헤더가 로드된 후, fragmentHeader.js 실행
       let script = document.createElement("script");
-      script.src = "./fragmentHeader/fragmentHeader1.js";
+      script.src = "./fragmentHeaderScript/fragmentHeader1.js";
       script.defer = true;
       document.body.appendChild(script);
 
